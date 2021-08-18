@@ -1,14 +1,22 @@
-*, html{
+@import 'sass/colors';
+
+*,
+html {
     padding: 0;
     margin: 0;
     border: none;
     box-sizing: border-box;
     font-family: 'Noto Serif JP', serif;
+
+    ::selection {
+        background: $yellow;
+        color: $blue-Two;
+    }
 }
 
-@import 'sass/colors';
-
-body{background-color: $white;}
+body {
+    background-color: $white;
+}
 
 .nav {
     width: 100%;
@@ -19,7 +27,7 @@ body{background-color: $white;}
     justify-content: center;
     align-items: center;
 
-    h1{
+    h1 {
         text-align: center;
         font-size: 40px;
         font-weight: 900;
@@ -31,11 +39,11 @@ body{background-color: $white;}
     }
 }
 
-.container-summary{
+.container-summary {
     padding: 16px 20px;
     margin-bottom: 40px;
 
-    .summary{
+    .summary {
         margin: auto;
         max-width: 100%;
         padding: 12px 20px;
@@ -46,7 +54,7 @@ body{background-color: $white;}
         font-size: 18px;
         font-weight: 600;
 
-        h3{
+        h3 {
             color: $darkGrey;
             text-decoration: 0.1em underline $darkGrey;
             margin-bottom: 20px;
@@ -56,41 +64,59 @@ body{background-color: $white;}
             font-style: oblique;
             letter-spacing: 0.06em;
         }
-    
-        a{
+
+        a {
             color: $black;
             text-decoration: none;
             font-size: 17px;
             line-height: 2em;
-    
-            &:hover{
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            &:hover {
                 text-decoration: underline;
-                
+                color: $blue;
             }
 
         }
 
-        .topic-main-one{text-indent: 1.5em;}
-        .topic-child-main-one{text-indent: 2.5em;}
-        .topic-child-main-two{text-indent: 3.5em;}
-        .topic-child-main-three{text-indent: 4.5em;}
-        .topic-child-main-four{text-indent: 5.5em;}
-        .topic-child-main-five{text-indent: 6.5em;}
-        
+        .topic-main-one {
+            text-indent: 1.5em;
+        }
+
+        .topic-child-main-one {
+            text-indent: 2.5em;
+        }
+
+        .topic-child-main-two {
+            text-indent: 3.5em;
+        }
+
+        .topic-child-main-three {
+            text-indent: 4.5em;
+        }
+
+        .topic-child-main-four {
+            text-indent: 5.5em;
+        }
+
+        .topic-child-main-five {
+            text-indent: 6.5em;
+        }
 
     }
 }
 
-.container-main-one{
+.container-main-one {
     padding: 12px 10px;
     max-width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 
-    h2{
+
+    h2 {
         text-align: center;
         color: $black;
         font-size: 32px;
@@ -98,7 +124,7 @@ body{background-color: $white;}
         letter-spacing: 0.05em;
     }
 
-    h3{
+    h3 {
         text-align: left;
         margin-left: 50px;
         font-size: 23px;
@@ -107,13 +133,13 @@ body{background-color: $white;}
         letter-spacing: 0.06em;
     }
 
-    p{
+    p {
         font-size: 18px;
         margin: 12px;
         line-height: 1.7em;
     }
 
-    .container-child-img-text{
+    .container-child-img-text {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -123,12 +149,12 @@ body{background-color: $white;}
     }
 }
 
-.container-main-two{
+.container-main-two {
     padding: 16px 20px;
     margin-bottom: 40px;
     margin-top: 20px;
 
-    h2{
+    h2 {
         text-align: center;
         color: $black;
         font-size: 32px;
@@ -136,7 +162,7 @@ body{background-color: $white;}
         letter-spacing: 0.05em;
     }
 
-    h3{
+    h3 {
         text-align: left;
         margin-left: 50px;
         font-size: 23px;
@@ -145,7 +171,7 @@ body{background-color: $white;}
         letter-spacing: 0.06em;
     }
 
-    p{
+    p {
         font-size: 18px;
         margin: 12px;
         line-height: 1.7em;
@@ -153,12 +179,12 @@ body{background-color: $white;}
 
 }
 
-.container-main-three{
+.container-main-three {
     padding: 16px 20px;
     margin-bottom: 40px;
     margin-top: 20px;
 
-    h2{
+    h2 {
         text-align: center;
         color: $black;
         font-size: 32px;
@@ -166,7 +192,7 @@ body{background-color: $white;}
         letter-spacing: 0.05em;
     }
 
-    h3{
+    h3 {
         text-align: left;
         margin-left: 50px;
         font-size: 23px;
@@ -175,7 +201,7 @@ body{background-color: $white;}
         letter-spacing: 0.06em;
     }
 
-    p{
+    p {
         font-size: 18px;
         margin: 12px;
         line-height: 1.7em;
@@ -183,7 +209,7 @@ body{background-color: $white;}
 
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 21px;
     font-weight: 800;
@@ -191,7 +217,7 @@ footer{
     letter-spacing: 2px;
     margin: 20px;
 
-    img{
+    img {
         max-width: 100%;
         margin: 12px;
         margin-bottom: 0px;

@@ -1,10 +1,23 @@
-*, html {
+*,
+html {
   padding: 0;
   margin: 0;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Noto Serif JP', serif;
+}
+
+* ::-moz-selection,
+html ::-moz-selection {
+  background: #ffb839;
+  color: #1875cf;
+}
+
+* ::selection,
+html ::selection {
+  background: #ffb839;
+  color: #1875cf;
 }
 
 body {
@@ -72,10 +85,13 @@ body {
   text-decoration: none;
   font-size: 17px;
   line-height: 2em;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .container-summary .summary a:hover {
   text-decoration: underline;
+  color: #277dff;
 }
 
 .container-summary .summary .topic-main-one {
