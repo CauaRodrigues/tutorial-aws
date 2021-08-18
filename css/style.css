@@ -4,10 +4,10 @@
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Noto Serif JP', serif;
 }
 
 body {
-  font-family: 'Noto Serif JP', serif;
   background-color: #fff;
 }
 
@@ -15,7 +15,7 @@ body {
   width: 100%;
   min-height: 12vh;
   max-height: 200px;
-  background-color: #de3927;
+  background-color: #023757;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,9 +31,11 @@ body {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
+  font-style: italic;
   display: inline-block;
   padding: 12px;
-  letter-spacing: 0.07em;
+  color: #fff;
+  letter-spacing: 0.2em;
 }
 
 .container-summary {
@@ -74,7 +76,6 @@ body {
 
 .container-summary .summary a:hover {
   text-decoration: underline;
-  color: #e61d0a;
 }
 
 .container-summary .summary .topic-main-one {
@@ -101,7 +102,7 @@ body {
   text-indent: 6.5em;
 }
 
-.container-git-one {
+.container-main-one {
   padding: 12px 10px;
   max-height: 420vh;
   max-width: 100%;
@@ -117,7 +118,7 @@ body {
           justify-content: space-between;
 }
 
-.container-git-one h2 {
+.container-main-one h2 {
   text-align: center;
   color: #000;
   font-size: 32px;
@@ -125,7 +126,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-.container-git-one h3 {
+.container-main-one h3 {
   text-align: left;
   margin-left: 50px;
   font-size: 23px;
@@ -134,13 +135,13 @@ body {
   letter-spacing: 0.06em;
 }
 
-.container-git-one p {
+.container-main-one p {
   font-size: 18px;
   margin: 12px;
   line-height: 1.7em;
 }
 
-.container-git-one .container-child-img-text {
+.container-main-one .container-child-img-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,45 +157,13 @@ body {
   max-width: 100%;
 }
 
-.container-git-one .container-child-img-text .text {
-  width: 600px;
-}
-
-.container-git-one .container-child-img-text .image {
-  max-width: 100%;
-  margin: auto;
-}
-
-.container-git-one .container-child-img-text .image img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.container-git-one p.link-git a {
-  color: #de3927;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.container-git-one p.link-git a:hover {
-  text-decoration: none;
-  color: #ff1822;
-}
-
-.container-git-one .command-git {
-  font-style: italic;
-  color: #363636;
-  font-size: 18px;
-}
-
-.container-git-two {
+.container-main-two {
   padding: 16px 20px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.container-git-two h2 {
+.container-main-two h2 {
   text-align: center;
   color: #000;
   font-size: 32px;
@@ -202,7 +171,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-.container-git-two h3 {
+.container-main-two h3 {
   text-align: left;
   margin-left: 50px;
   font-size: 23px;
@@ -211,38 +180,19 @@ body {
   letter-spacing: 0.06em;
 }
 
-.container-git-two p {
+.container-main-two p {
   font-size: 18px;
   margin: 12px;
   line-height: 1.7em;
 }
 
-.container-git-two .git-commands {
-  margin: 12px 12px 12px 12px;
-  padding: 8px 0px 8px 30px;
-  max-width: 100%;
-  background-color: #5c5c5c;
-  border-radius: 40px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.container-git-two .git-commands span {
-  font-size: 16px;
-}
-
-.container-git-two .git-commands span.user {
-  font-size: 14px;
-}
-
-.container-git-three {
+.container-main-three {
   padding: 16px 20px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.container-git-three h2 {
+.container-main-three h2 {
   text-align: center;
   color: #000;
   font-size: 32px;
@@ -250,7 +200,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-.container-git-three h3 {
+.container-main-three h3 {
   text-align: left;
   margin-left: 50px;
   font-size: 23px;
@@ -259,113 +209,10 @@ body {
   letter-spacing: 0.06em;
 }
 
-.container-git-three p {
+.container-main-three p {
   font-size: 18px;
   margin: 12px;
   line-height: 1.7em;
-}
-
-.container-git-three .container-img-one {
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-img-one img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.container-git-three .container-image-two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-image-two .container-img-two {
-  max-width: 620px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-image-two .container-img-two img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.container-git-three .container-image-three {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-image-three .container-img-three {
-  max-width: 660px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-image-three .container-img-three img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.container-git-three .container-image-four {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-image-four .container-img-four {
-  max-width: 660px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container-git-three .container-image-four .container-img-four img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.container-git-three .container-img-five {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container-git-three .container-img-five img {
-  max-width: 100%;
 }
 
 footer {
@@ -382,20 +229,5 @@ footer img {
   margin: 12px;
   margin-bottom: 0px;
   border-radius: 25%;
-}
-
-@media only screen and (max-width: 1340px) {
-  .container-git-one h3 {
-    margin: 0;
-  }
-  .container-git-one .container-child-img-text .text {
-    width: 100%;
-  }
-  .container-git-two h3 {
-    margin: 0;
-  }
-  .container-git-three h3 {
-    margin: 0;
-  }
 }
 /*# sourceMappingURL=style.css.map */
