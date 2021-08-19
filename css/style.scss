@@ -378,3 +378,21 @@ footer {
         margin-bottom: 0px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .container-main-one{
+        h3{margin: 0px;}
+    }
+
+    .container-main-two{
+        h3{margin: 0px;}
+    }
+
+    .container-main-three{
+        h3{margin: 0px;}
+    }
+
+    .container-main-four{
+        h3{margin: 0px;}
+    }
+}
