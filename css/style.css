@@ -375,7 +375,7 @@ body {
 .container-main-three .container-main-image .container-img img {
   max-width: 100%;
   max-height: 100%;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 .container-main-four {
