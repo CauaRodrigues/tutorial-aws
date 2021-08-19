@@ -328,6 +328,16 @@ body {
         line-height: 1.7em;
     }
 
+    ol {
+        margin-left: 31px;
+
+        li{
+            font-size: 18px;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+
     .container-command-image{
         width: 100%;
         display: flex;
@@ -351,6 +361,7 @@ body {
             }
         }
     }
+
 }
 
 footer {

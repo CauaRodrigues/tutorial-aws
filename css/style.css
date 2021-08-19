@@ -407,6 +407,16 @@ body {
   line-height: 1.7em;
 }
 
+.container-main-four ol {
+  margin-left: 31px;
+}
+
+.container-main-four ol li {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .container-main-four .container-command-image {
   width: 100%;
   display: -webkit-box;

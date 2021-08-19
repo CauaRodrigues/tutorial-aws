@@ -548,16 +548,174 @@
 
     <article class="container-main-four" id="linux">
         <h2>4 - Comandos do Linux</h2>
+        <p>
+            Vamos ver agora alguns comandos básicos que podemos usar para conseguirmos subir um site em um servidor. Mas antes, seria bom você já ter um arquivo HTML para que você possa vê-lo. <br>
+            Para esse Guia eu usarei o Ubuntu Server.
+        </p>
 
         <h3>Instalando Pacotes</h3>
+        <p>
+            É bem simples instalar pacotes no linux. Exemplo: "sudo apt install nome do pacote". <br>
+            Se você estiver no modo super usuário (sudo), você não precisa usar a palavra chave "sudo" antes do "apt". Vamos ver isso na prática:
+        </p>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu1.png">
+            </div>
+        </div>
+        
 
         <h3>Atualizando a máquina</h3>
+        <p>
+            Precisamos atualizar a nossa máquina também, para isso vamos usar os seguintes comandos:
+        </p>
+        <ol>
+            <li> sudo apt update</li>
+            <li> sudo apt upgrade</li>
+        </ol>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu2.png">
+            </div>
+        </div>
+        <br>
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu3.png">
+            </div>
+        </div>
+        <br>
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu4.png">
+            </div>
+        </div>
 
         <h3>Usuário</h3>
+        <p>
+            Para entrarmos no modo de super usuário, temos que usar o comando "sudo su". Temos que entrar nesse modo para podermos caminhar entre os diretórios de nossa máquina e receber os privilégios de root.
+        </p>
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu5.png">
+            </div>
+        </div>
 
         <h3>Caminhando entre os arquivos</h3>
+        <p>
+            Agora que já entramos em nosso diretório principal, podemos usar alguns comandos para navegar nele e localizar onde fica os nossos arquivos que hospedamos mais cedo pelo WinSCP.
+            Para começarmos vou precisar que você saia do diretório atual em que você está. Para isso você utilizara o seguinte comando:
+        </p>
 
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu6.png">
+            </div>
+        </div>
+
+        <p>
+            Agora vamos entrar na pasta em que colocamos a pasta do nosso site. Vou listar alguns comandos que vamos utilizar:
+        </p>
+        <ol>
+            <li>ls - (Para ele mostrar quais são os arquivos e pastas que se encontram em nosso diretório atual)</li>
+            <li>cd nome-do-diretorio/ - (Já utilizamos esse. Ele nos permite entrar em um diretório.)</li>
+            <li>cd .. - (Para sair do diretório atual e voltar ao anterior)</li>
+            <li>clear  - (Para limpar a tela)</li>
+        </ol>
+
+        <p>
+            O nosso objetivo é encontrar o diretório "var/www/html/". Para isso você tem duas opções:
+        </p>
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu6.png">
+            </div>
+        </div>
+        <p>
+            1 - Digitar o caminho e ir direto para ele:<br>
+            cd var/www/html/
+        </p>
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu7.png">
+            </div>
+        </div>
+
+        <p>
+            2 - Caminhar até o diretório usando os comandos "cd", para entrar em um diretório, e "ls", para ver os diretórios e arquivos.
+        </p>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu8.png">
+            </div>
+        </div>
+        <br>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu9.png">
+            </div>
+        </div>
+        <br>
+       
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu10.png">
+            </div>
+        </div>
+        <br>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu11.png">
+            </div>
+        </div>
+        <br>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu12.png">
+            </div>
+        </div>
+        <br>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/ubuntu13.png">
+            </div>
+        </div>
+
+        
         <h3>Acessando a página</h3>
+        <p>
+            Agora vamos ao que nos interessa. Vamos Acessar a nossa página. Essa é a parte mais simples desse tutorial, basta você digitar o ip da sua máquina em seu navegador. Caso você não saiba o ip dela, você consegue encontrar o ip da sua máquina no console da AWS, verificando as instâncias.<br>
+            Para acessar, basta digitar o ip da máquina na barra de pesquisa em seu navegador.
+        </p>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/acessando.png">
+            </div>
+        </div>
+
+        <p>
+            Caso, tenha dado algum erro. Verifique se o nome do seu arquivo html está como "index.html". Se ele não estiver, digite do seguinte modo em seu navegador: 
+        </p>
+
+        <div class="container-command-image">
+            <div class="container-command">
+                <img src="imagens/acessando2.png">
+            </div>
+        </div>
+
+        <p>
+            No lugar de "teste.html", digite o nome de seu arquivo. 
+        </p>
+
+
     </article>
 
     <footer>
