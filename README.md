@@ -21,8 +21,8 @@ Projeto que procura trazer informações sobre **AWS**, ferramentas usadas para 
 # :arrow_down:Downloads
 
 * **Putty** - https://www.putty.org/
-* * **winSCP** - https://winscp.net/eng/index.php
-* * **AWS** - https://signin.aws.amazon.com/
+* **winSCP** - https://winscp.net/eng/index.php
+* **AWS** - https://signin.aws.amazon.com/
 
 # :busts_in_silhouette:Participantes
 * [Cauã Rodrigues](https://github.com/CauaRodrigues)
